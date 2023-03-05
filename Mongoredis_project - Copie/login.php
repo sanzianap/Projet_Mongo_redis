@@ -19,7 +19,7 @@ if($output[0]==1)
 	$_SESSION['username'] = $user;
 	$_SESSION['id']=substr($output, 2);
 	#Calling the next php page in order to display the conversations
-	#header("Location: Conversation.php");
+	header("Location: Conversation.php");
 }
 else 
 	echo "Invalid credentials";
